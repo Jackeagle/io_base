@@ -281,6 +281,9 @@ public interface MetricsConstants {
     // Battery Settings
     public static final int BATTERY_SETTINGS = 243;
 
+    // Power menu
+    public static final int POWER_MENU_SETTINGS = 244;
+
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
 
