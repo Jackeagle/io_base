@@ -17,15 +17,9 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Floating action button -->
-    <dimen name="floating_action_button_height">54dp</dimen>
-    <dimen name="floating_action_button_width">54dp</dimen>
-    <dimen name="floating_action_button_translation_z">12dp</dimen>
-    <dimen name="floating_action_button_margin_side">78dp</dimen>
-    <dimen name="floating_action_button_margin_bottom">42dp</dimen>
-
-    <dimen name="phone_height">210dp</dimen>
-    <dimen name="phone_width">420dp</dimen>
-
+    <string name="profile_applist_title">Apps</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="lockscreen_targets_message">Lock screen shortcuts</string>
 </resources>
