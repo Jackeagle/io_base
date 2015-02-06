@@ -291,6 +291,9 @@ public interface MetricsConstants {
     public static final int QS_VOLUME = 248;
     public static final int QS_HEADSUP = 249;
 
+    // Notification Drawer Settings
+    public static final int NotificationDrawerSettings = 250;
+
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
 

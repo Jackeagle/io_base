@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.io;
+package com.android.internal.util.cm;
 
 /* Master list of all actions for the power menu */
 public class PowerMenuConstants {
