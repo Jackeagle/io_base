@@ -292,6 +292,7 @@ public interface MetricsConstants {
     public static final int QS_SCREEN_OFF = 247;
     public static final int QS_SCREENSHOT = 248;
     public static final int QS_VOLUME = 249;
+    public static final int QS_HEADSUP = 250;
 
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
