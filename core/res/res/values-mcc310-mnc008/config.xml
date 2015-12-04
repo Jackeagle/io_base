@@ -30,4 +30,7 @@
          a permamnent error -->
     <bool translatable="false" name="config_protocol_errors_perm_failure">false</bool>
 
+    <!-- If this is true, key chords can be used to take a screen record on the device. -->
+    <bool name="config_enableScreenrecordChord">true</bool>
+
 </resources>
