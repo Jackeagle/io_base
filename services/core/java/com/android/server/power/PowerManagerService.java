@@ -156,7 +156,7 @@ public final class PowerManagerService extends SystemService
     // Power features defined in hardware/libhardware/include/hardware/power.h.
     private static final int POWER_FEATURE_DOUBLE_TAP_TO_WAKE = 1;
 
-    private static final int DEFAULT_BUTTON_ON_DURATION = 5 * 1000;
+    private static final int DEFAULT_BUTTON_ON_DURATION = 2 * 1000;
 
     // Default setting for double tap to wake.
     private static final int DEFAULT_DOUBLE_TAP_TO_WAKE = 0;
@@ -223,6 +223,7 @@ public final class PowerManagerService extends SystemService
     // Timestamp of the last call to user activity.
     private long mLastUserActivityTime;
     private long mLastUserActivityTimeNoChangeLights;
+    private long mLastButtonActivityTime;
 
     // Timestamp of last interactive power hint.
     private long mLastInteractivePowerHintTime;
@@ -1085,6 +1086,11 @@ public final class PowerManagerService extends SystemService
                     return true;
                 }
             } else {
+                if (eventTime > mLastButtonActivityTime && (event & PowerManager.USER_ACTIVITY_EVENT_BUTTON) != 0) {
+                    mLastButtonActivityTime = eventTime;
+                    mDirty |= DIRTY_USER_ACTIVITY;
+                }
+
                 if (eventTime > mLastUserActivityTime) {
                     mLastUserActivityTime = eventTime;
                     mDirty |= DIRTY_USER_ACTIVITY;
@@ -1584,7 +1590,7 @@ public final class PowerManagerService extends SystemService
                             }
 
                             if (mButtonTimeout != 0
-                                    && now > mLastUserActivityTime + mButtonTimeout) {
+                                    && now > mLastButtonActivityTime + mButtonTimeout) {
                                 mButtonsLight.setBrightness(0);
                             } else {
                                 mButtonsLight.setBrightness(buttonBrightness);
