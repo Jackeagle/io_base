@@ -291,14 +291,11 @@ public interface MetricsConstants {
     // Navigation bar settings
     public static final int NAV_BAR_SETTINGS = 250;
 
-    // Navigation dimension settings
-    public static final int NAV_DIMENSION_SETTINGS = 251;
-
     // Battery settings
-    public static final int BATTERY_SETTINGS = 252;
+    public static final int BATTERY_SETTINGS = 251;
 
     // Status bar settings
-    public static final int LOCK_SCREEN_SETTINGS = 253;
+    public static final int LOCK_SCREEN_SETTINGS = 252;
 
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
