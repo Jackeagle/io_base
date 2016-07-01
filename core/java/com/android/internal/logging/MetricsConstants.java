@@ -264,6 +264,20 @@ public interface MetricsConstants {
     public static final int TUNER_BATTERY_PERCENTAGE = 237;
     public static final int FUELGAUGE_INACTIVE_APPS = 238;
 
+    // InfinitiveOS
+    
+    // Infinitive Dimension
+    public static final int IO_SETTINGS = 239;
+
+    // Status Bar Settings
+    public static final int STATUS_BAR_SETTINGS = 240;
+
+    // Lockscreen Settings
+    public static final int LOCK_SCREEN_SETTINGS = 241;
+
+    // Recents Settings
+    public static final int RECENTS_SETTINGS = 242;
+
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
 
