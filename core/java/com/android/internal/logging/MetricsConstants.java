@@ -278,6 +278,9 @@ public interface MetricsConstants {
     // Recents Settings
     public static final int RECENTS_SETTINGS = 242;
 
+    // Battery Settings
+    public static final int BATTERY_SETTINGS = 243;
+
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
 
