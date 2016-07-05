@@ -87,7 +87,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.android.internal.util.cm.PowerMenuConstants.*;
+import static com.android.internal.util.io.PowerMenuConstants.*;
 
 /**
  * Needed for takeScreenshot
