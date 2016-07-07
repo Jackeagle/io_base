@@ -294,6 +294,10 @@ public interface MetricsConstants {
     public static final int QS_VOLUME = 249;
     public static final int QS_HEADSUP = 250;
 
+    // Animation Menu Settings
+    public static final int ANIMATION_SETTINGS = 251;
+    public static final int ANIMATION = 252;
+
     // These constants must match those in the analytic pipeline, do not edit.
     // Add temporary values to the top of MetricsLogger instead.
 
